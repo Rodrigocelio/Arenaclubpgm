@@ -1,11 +1,15 @@
+/* Define as configurações de ajuste de tamanho de texto para o elemento html */
+
 html {
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  font-family: sans-serif;
+  -ms-text-size-adjust: 100%; /* Define o ajuste de tamanho de texto para navegadores Internet Explorer */
+  -webkit-text-size-adjust: 100%; /* Define o ajuste de tamanho de texto para navegadores WebKit (como Safari) */
+  font-family: sans-serif; /* Define a família de fonte padrão para o documento como "sans-serif" (sem serifa) */
 }
 
+/* Define as configurações de margem para o elemento body */
+
 body {
-  margin: 0;
+  margin: 0; /* Define a margem do corpo do documento como 0, removendo qualquer espaçamento entre o corpo e a borda da janela do navegador */
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
