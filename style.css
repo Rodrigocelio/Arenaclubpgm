@@ -2322,7 +2322,7 @@ blockquote {
   height: 100vh;
   color: #000;
   text-align: center;
-  mix-blend-mode: screen;
+  mix-blend-mode: normal;
   background-color: #fff;
   flex-direction: column;
   justify-content: center;
@@ -2647,6 +2647,7 @@ blockquote {
 
 .brix---header-logo {
   max-width: 250px;
+  background-color: transparent;
 }
 
 .brix---header-logo-link {
@@ -2812,6 +2813,7 @@ blockquote {
 
   .brix---header-logo {
     max-width: 232px;
+    background-color: transparent;
   }
 
   .brix---header-wrapper {
@@ -2848,6 +2850,7 @@ blockquote {
 
   .brix---header-logo {
     max-width: 90%;
+    background-color: transparent;
   }
 }
 
@@ -2936,6 +2939,7 @@ blockquote {
 
   .brix---header-logo {
     max-width: 84%;
+    background-color: transparent;
   }
 
   .brix---container-default {
