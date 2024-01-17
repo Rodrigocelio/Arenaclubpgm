@@ -1,0 +1,48 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title></title>
+        <script type="text/javascript" src="Scripts/jquery-1.10.2.js">
+        $(document).ready(function () {
+            $("*").click(function () {
+                $("p").hide();
+            });
+        });
+        </script>
+    </head>
+
+    <script type="text/javascript">
+        document.onclick = function (e) {
+            e = e || window.event;
+            var element = e.target || e.srcElement;
+            if (element.innerHTML == "Image") {
+                //someFunction(element.href);
+                var name = element.nameProp;
+                var address = element.href;
+                saveImageAs1(element.nameProp, element.href);
+                return false; // Prevent default action and stop event propagation
+            }
+            else
+                return true;
+        };
+
+        function saveImageAs1(name, adress) {
+            if (confirm('you wanna save this image?')) {
+                window.win = open(adress);
+                //response.redirect("~/testpage.html");
+                setTimeout('win.document.execCommand("SaveAs")', 100);
+                setTimeout('win.close()', 500);
+            }
+        }
+    </script>
+
+    <body>
+        <form id="form1" runat="server">
+            <div>
+                <p>
+                    <a href="http://localhost:55298/SaveImage/demo/Sample2.xlsx" target="_blank">Excel</a><br />
+                    <a href="imgs/Logo Site-p-800.png" id="abc">Image</a>
+                </p>
+            </div>
+        </form>
+    </body>
+</html>
