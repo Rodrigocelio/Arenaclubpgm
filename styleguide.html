@@ -1,46 +1,21 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <title></title>
-    <script type="text/javascript" src="Scripts/jquery-1.10.2.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $("a").click(function (e) {
-                e.stopPropagation(); // Impede a propagação do evento para elementos pai
-            });
-        });
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      body {
+        margin: 100px;
+      }
+    </style>
+  </head>
 
-        document.onclick = function (e) {
-            e = e || window.event;
-            var element = e.target || e.srcElement;
-            if (element.innerHTML == "Image") {
-                var name = element.nameProp;
-                var address = element.href;
-                saveImageAs1(element.nameProp, element.href);
-                return false; // Impede a ação padrão e interrompe a propagação do evento
-            }
-            else
-                return true;
-        };
+  <body>
+    <div>bobbyhadz.com</div>
 
-        function saveImageAs1(name, address) {
-            if (confirm('Você deseja salvar esta imagem?')) {
-                var win = window.open(address, '_blank');
-                win.document.execCommand("SaveAs");
-                win.document.close();
-            }
-        }
-    </script>
-</head>
+    <br />
 
-<body>
-    <form id="form1" runat="server">
-        <div>
-            <p>
-                <a href="http://localhost:55298/SaveImage/demo/Sample2.xlsx" target="_blank">Excel</a><br />
-                <a href="imgs/Logo Site-p-800.png" id="abc">Image</a>
-            </p>
-        </div>
-    </form>
-</body>
+    <button id="btn">Download image</button>
+
+    <script src="src/script.js"></script>
+  </body>
 </html>
