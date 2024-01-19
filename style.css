@@ -2856,8 +2856,9 @@ blockquote {
 }
 
 @media screen and (max-width: 479px) {
-  html {scroll-behavior: smooth;
-    scroll-padding: 28vmax;
+  html {
+    scroll-behavior: smooth;
+    scroll-padding: 100vmax;
   }
   }
 
