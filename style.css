@@ -4,6 +4,8 @@ html {
   -ms-text-size-adjust: 100%; /* Define o ajuste de tamanho de texto para navegadores Internet Explorer */
   -webkit-text-size-adjust: 100%; /* Define o ajuste de tamanho de texto para navegadores WebKit (como Safari) */
   font-family: sans-serif; /* Define a família de fonte padrão para o documento como "sans-serif" (sem serifa) */
+  scroll-behavior: smooth;
+  scroll-padding: 7vmax;
 }
 
 /* Define as configurações de margem para o elemento body */
