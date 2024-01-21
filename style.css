@@ -4,6 +4,7 @@ html {
   -ms-text-size-adjust: 100%; /* Define o ajuste de tamanho de texto para navegadores Internet Explorer */
   -webkit-text-size-adjust: 100%; /* Define o ajuste de tamanho de texto para navegadores WebKit (como Safari) */
   font-family: sans-serif; /* Define a família de fonte padrão para o documento como "sans-serif" (sem serifa) */
+
 }
 
 /* Define as configurações de margem para o elemento body */
@@ -2853,6 +2854,13 @@ blockquote {
     background-color: transparent;
   }
 }
+
+@media screen and (max-width: 479px) {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding: 100vmax;
+  }
+  }
 
 @media screen and (max-width: 479px) {
   .container {
