@@ -10,11 +10,11 @@ h1 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding-top: 120px;
+    padding-top: 20px;
   }
 
 .hit-the-floor {
-    padding-top: 100px;
+    padding-top: 64px;
     color: #fff;
     font-size: 12em;
     font-weight: bold;
